@@ -4,11 +4,21 @@ project (LeitorCertificadoDigital)
 
 find_package(OpenSSL REQUIRED)
 
-MESSAGE(STATUS "Diretorio OpenSSL: " ${OpenSSL})
 
-set (OPENSSL_LIBRARY_DIRS OpenSSL/lib)
+#define o diretório da biblioteca
+set (OPENSSL_LIBRARY_DIRS ${OPENSSL_LIBRARIES})
 
-# define os caminhos para o biblioteca 
 include_directories(OpenSSL/include)
+link_directories(OpenSSL/lib)
+
+
+MESSAGE(STATUS "Status OpenSSL: " ${OPENSSL_FOUND})
+message("OpenSSL include dir: ${OPENSSL_INCLUDE_DIR}")
+message("OpenSSL libraries: ${OPENSSL_LIBRARIES}")
+
 
 add_subdirectory(src)
+
+
+
+

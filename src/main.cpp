@@ -2,15 +2,13 @@
 #include <iostream>
 
 
-#include <../OpenSSL/include/openssl/x509v3.h>
-#include <../OpenSSL/include/openssl/evp.h>
-
+#include <openssl/x509.h>
 
 
 
 int main() {
 
-	//OpenSSL_add_all_algorithms();
+	//OpenSSL_adsd_all_algorithms();
 
 	while (true)
 	{
