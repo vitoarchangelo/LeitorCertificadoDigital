@@ -3,22 +3,18 @@ cmake_minimum_required (VERSION 2.6)
 project (LeitorCertificadoDigital)
 
 find_package(OpenSSL REQUIRED)
+find_library(SSL_LIB libssl.a REQUIRED )
 
-
-#define o diretório da biblioteca
-set (OPENSSL_LIBRARY_DIRS ${OPENSSL_LIBRARIES})
+include_directories ("${PROJECT_SOURCE_DIR}")
 
 include_directories(OpenSSL/include)
-link_directories(OpenSSL/lib)
 
+set(OPENSSL_USE_STATIC_LIBS TRUE)
 
-MESSAGE(STATUS "Status OpenSSL: " ${OPENSSL_FOUND})
+MESSAGE(STATUS "Status OpenSSL: " ${OpenSSL})
 message("OpenSSL include dir: ${OPENSSL_INCLUDE_DIR}")
 message("OpenSSL libraries: ${OPENSSL_LIBRARIES}")
 
 
+
 add_subdirectory(src)
-
-
-
-

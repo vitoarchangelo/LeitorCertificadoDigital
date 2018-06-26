@@ -8,11 +8,11 @@
 
 int main() {
 
-	//OpenSSL_adsd_all_algorithms();
+	OpenSSL_add_all_algorithms();
 
 	while (true)
 	{
-		printf("a \n");
+		printf("sera \n");
 	}
 	return 0;
 }
