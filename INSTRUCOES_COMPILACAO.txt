@@ -1,0 +1,20 @@
+Instruções para Compilação do LeitorCertificadoDigital
+
+Para compilar o código fonte é necessário ter instalado no seu dispositivo os aplicativos:
+	-OpenSSL 
+	-CMake (Versão 2.6 acima)
+	-Um compilador de C++
+
+
+Siga os passos:
+	-Abra o terminal e vá para a primeira pasta que contém o arquivo CMakeList.txt
+	-Digite:
+		-mkdir build 
+		-cd build
+		-cmake -G "Visual Studio 15 2017" .. ***
+
+Após isso, escolha o compilador de sua preferência e compile os arquivos.
+No caso do exemplo, será criado um projeto do Visual Studio 2017, com o nome
+de LeitorCertificadoDigital, na pasta build.
+
+***O parâmetro entre aspas pode ser substituido pelo gerador de makefiles adequado ao seu dispositivo.
