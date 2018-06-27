@@ -3,7 +3,9 @@ cmake_minimum_required (VERSION 2.6)
 project (LeitorCertificadoDigital)
 
 find_package(OpenSSL REQUIRED)
-find_library(SSL_LIB libssl.a REQUIRED )
+find_library(SSL_LIB libssl.a REQUIRED)
+
+find_library(CRYPTO_LIB crypto.a REQUIRED )
 
 include_directories ("${PROJECT_SOURCE_DIR}")
 
