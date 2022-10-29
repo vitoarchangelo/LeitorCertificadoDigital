@@ -1,0 +1,11 @@
+Instruções para uso do Leitor de Certificados Digital:
+	-Inicie o LeitorCertificadoDigital.exe pelo terminal
+	-Digite o caminho* do certificado, incuindo a extensão(.der)
+	-Pressione Enter
+
+
+*Caso o arquivo esteja no mesmo diretório do LeitorCertificadoDigital.exe, é suficiente fornecer só o 
+nome do arquivo com a extensão.
+
+**Os diretórios para o caminho do arquivo deverão ser separados por uma barra (/). 
+Por exemplo:C:/Users/Vito/Projetos/Repos/LeitorCertificadoDigital/_install/cert.der
